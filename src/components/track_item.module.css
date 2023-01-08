@@ -1,0 +1,64 @@
+.container {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.container:hover {
+  background-color: #ffffff11;
+}
+
+.track__artwork {
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.track__name {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.track__info {
+  flex: 1;
+  padding: 5px 0;
+}
+
+.track__info__list {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+.track__artist,
+.track__collection,
+.track__name a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.15s;
+}
+
+.track__artist:hover,
+.track__collection:hover,
+.track__name:hover {
+  color: #6f6fff;
+}
+
+.playBtn {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.playBtn:hover {
+  color: #6f6fff;
+}

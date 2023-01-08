@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff22;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.player__image {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.player__trackName {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.player__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.player__control {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: inherit;
+  cursor: pointer;
+}
