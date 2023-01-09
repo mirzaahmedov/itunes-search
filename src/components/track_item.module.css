@@ -45,7 +45,7 @@
 
 .track__artist:hover,
 .track__collection:hover,
-.track__name:hover {
+.track__name a:hover {
   color: #6f6fff;
 }
 
