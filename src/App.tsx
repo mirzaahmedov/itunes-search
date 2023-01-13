@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { searchQuery } from "./api/search";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -12,7 +11,9 @@ import "./App.css";
 
 function App() {
   const { value, search, setValue } = useSearchValue("");
+
   const { data, isLoading } = useQuery(["search", search], searchQuery);
+
   const { currentTrack, setCurrentTrack, nextTrack, prevTrack } =
     usePlayList(data);
 
@@ -26,16 +27,17 @@ function App() {
           onChange={(e) => setValue(e.target.value)}
         />
       </header>
-      {isLoading ? <Loading /> : null}
-      {Array.isArray(data)
-        ? data.map((track) => (
-            <TrackItem
-              onClickPlay={(track) => setCurrentTrack(track)}
-              key={track.trackId}
-              {...track}
-            />
-          ))
-        : null}
+      {isLoading ? (
+        <Loading />
+      ) : Array.isArray(data) ? (
+        data.map((track) => (
+          <TrackItem
+            onClickPlay={(track) => setCurrentTrack(track)}
+            key={track.trackId}
+            {...track}
+          />
+        ))
+      ) : null}
       <Player
         track={currentTrack}
         onClickNext={nextTrack}
