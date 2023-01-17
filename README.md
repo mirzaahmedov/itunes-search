@@ -3,9 +3,9 @@
 A simple app that allows users to search for music on iTunes. Built with React and React Query.
 
 ## Features
-- Search for music by song name
-- View album artwork, track list, and pricing information
-- Preview songs directly from the app
+- 🔍 Search for music by song name
+- 📃 View album artwork, track list, and pricing information
+- 🎶 Preview songs directly from the app
 
 ![brave_7sqYYyxFGa](https://user-images.githubusercontent.com/76392150/212252979-0c414557-009a-4368-af83-cd0d6afad895.png)
 
